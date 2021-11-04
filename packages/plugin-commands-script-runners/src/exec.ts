@@ -130,7 +130,7 @@ export async function handler (
           result.passes++
         } catch (err: any) { // eslint-disable-line
           if (!opts.recursive && typeof err.exitCode === 'number') {
-            process.exit(err.exitCode)
+            process.exitCode = err.exitCode
           }
           logger.info(err)
 

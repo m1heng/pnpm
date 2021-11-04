@@ -5,5 +5,5 @@ export default function err (error: Error) {
   // that is why we pass error as a message as well, to pass
   // any additional info
   logger.error(error, error)
-  process.exit(1)
+  process.exitCode = 1
 }

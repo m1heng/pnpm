@@ -67,7 +67,8 @@ export default (pnpmFilePath: string, prefix: string) => {
     if (err instanceof SyntaxError) {
       console.error(chalk.red('A syntax error in the .pnpmfile.cjs\n'))
       console.error(err)
-      process.exit(1)
+      process.exitCode = 1
+      return
     }
     if (err.code !== 'MODULE_NOT_FOUND' || pnpmFileExistsSync(pnpmFilePath)) {
       throw new PnpmFileFailError(pnpmFilePath, err)

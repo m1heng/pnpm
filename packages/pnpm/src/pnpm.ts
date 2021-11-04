@@ -80,5 +80,5 @@ async function runPnpm () {
 async function passThruToNpm () {
   const runNpm = (await import('./runNpm')).default
   const { status } = await runNpm(argv)
-  process.exit(status!)
+  process.exitCode = status!
 }

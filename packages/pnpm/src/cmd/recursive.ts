@@ -117,5 +117,5 @@ A shared lockfile also means that all dependencies of all projects will be in a 
 
 export function handler () {
   console.log(help())
-  process.exit(1)
+  process.exitCode = 1
 }

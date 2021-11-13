@@ -9,7 +9,7 @@
 - [Commit Message Guidelines](#commit-message-guidelines)
   - [Commit Message Format](#commit-message-format)
     - [Revert](#revert)
-    - [Type](#type)
+    - [Type](#type)s
     - [Scope](#scope)
     - [Subject](#subject)
     - [Body](#body)
